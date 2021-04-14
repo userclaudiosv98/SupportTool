@@ -1,0 +1,10 @@
+C:\Users\claud\Documents\Workspace\Projetos\iClaudioSolutions\SupportTool\SupportTool\SupportTool\bin\Debug\SupportTool.exe.config
+C:\Users\claud\Documents\Workspace\Projetos\iClaudioSolutions\SupportTool\SupportTool\SupportTool\bin\Debug\SupportTool.exe
+C:\Users\claud\Documents\Workspace\Projetos\iClaudioSolutions\SupportTool\SupportTool\SupportTool\bin\Debug\SupportTool.pdb
+C:\Users\claud\Documents\Workspace\Projetos\iClaudioSolutions\SupportTool\SupportTool\SupportTool\obj\Debug\SupportTool.csprojAssemblyReference.cache
+C:\Users\claud\Documents\Workspace\Projetos\iClaudioSolutions\SupportTool\SupportTool\SupportTool\obj\Debug\SupportTool.Form1.resources
+C:\Users\claud\Documents\Workspace\Projetos\iClaudioSolutions\SupportTool\SupportTool\SupportTool\obj\Debug\SupportTool.Properties.Resources.resources
+C:\Users\claud\Documents\Workspace\Projetos\iClaudioSolutions\SupportTool\SupportTool\SupportTool\obj\Debug\SupportTool.csproj.GenerateResource.cache
+C:\Users\claud\Documents\Workspace\Projetos\iClaudioSolutions\SupportTool\SupportTool\SupportTool\obj\Debug\SupportTool.csproj.CoreCompileInputs.cache
+C:\Users\claud\Documents\Workspace\Projetos\iClaudioSolutions\SupportTool\SupportTool\SupportTool\obj\Debug\SupportTool.exe
+C:\Users\claud\Documents\Workspace\Projetos\iClaudioSolutions\SupportTool\SupportTool\SupportTool\obj\Debug\SupportTool.pdb
