@@ -5,6 +5,7 @@ using System.IO;
 using System;
 using System.Management;
 using System.Linq;
+using System.Net.NetworkInformation;
 
 namespace SupportTool
 {
@@ -15,6 +16,7 @@ namespace SupportTool
             InitializeComponent();
         }
 
+        //Eventos
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             Process.Start("https://www.youtube.com/watch?v=RLQlaYqI_G4");
@@ -32,20 +34,7 @@ namespace SupportTool
 
         private void button2_Click(object sender, System.EventArgs e)
         {
-            IPHostEntry host;
-            var localIP = string.Empty;
-            host = Dns.GetHostEntry(Dns.GetHostName());
-
-            foreach (IPAddress ip in host.AddressList)
-            {
-                if (ip.AddressFamily.ToString().Equals("InterNetwork"))
-                {
-                    localIP = ip.ToString();
-                    break;
-                }
-            }
-
-            button2.Text = $"IP Interno: {localIP}";
+            button2.Text = $"IP Interno: {getIpAddres()}";
         }
 
         private void button3_Click(object sender, System.EventArgs e)
@@ -65,9 +54,52 @@ namespace SupportTool
         {
             button4.Text = System.Security.Principal.WindowsIdentity.GetCurrent().Name.Split('\\').Last();
         }
+
         private void button5_Click(object sender, EventArgs e)
         {
             button5.Text = System.Security.Principal.WindowsIdentity.GetCurrent().Name.Split('\\').First();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            button6.Text = getPing();
+        }
+
+        //Funções
+        private static string getIpAddres()
+        {
+            IPHostEntry host;
+            var localIP = string.Empty;
+            host = Dns.GetHostEntry(Dns.GetHostName());
+
+            foreach (IPAddress ip in host.AddressList)
+            {
+                if (ip.AddressFamily.ToString().Equals("InterNetwork"))
+                {
+                    localIP = ip.ToString();
+                    break;
+                }
+            }
+
+            return localIP;
+        }
+
+        private static string getPing()
+        {
+            Ping p = new Ping();
+            PingReply r;
+            string s;
+            s = getIpAddres();
+            r = p.Send(s);
+
+            if (r.Status == IPStatus.Success)
+            {
+                return "Ping to " + s.ToString() + "[" + r.Address.ToString() + "]" + " Successful" + " Response delay = " + r.RoundtripTime.ToString() + " ms";
+            }
+            else
+            {
+                return "Failed";
+            }
         }
     }
 }

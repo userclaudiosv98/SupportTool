@@ -36,6 +36,7 @@ namespace SupportTool
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // linkLabel1
@@ -57,9 +58,11 @@ namespace SupportTool
             // 
             this.button1.BackColor = System.Drawing.Color.Transparent;
             this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
-            this.button1.Location = new System.Drawing.Point(95, 47);
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button1.Location = new System.Drawing.Point(24, 42);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(285, 23);
+            this.button1.Size = new System.Drawing.Size(435, 23);
             this.button1.TabIndex = 1;
             this.button1.Text = "Clique aqui para identificar seu IP Púiblico";
             this.button1.UseVisualStyleBackColor = false;
@@ -68,10 +71,10 @@ namespace SupportTool
             // button2
             // 
             this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button2.Location = new System.Drawing.Point(95, 89);
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button2.Location = new System.Drawing.Point(24, 84);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(285, 23);
+            this.button2.Size = new System.Drawing.Size(435, 23);
             this.button2.TabIndex = 2;
             this.button2.Text = "Clique aqui para identificar seu IP Interno";
             this.button2.UseVisualStyleBackColor = true;
@@ -80,10 +83,10 @@ namespace SupportTool
             // button3
             // 
             this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button3.Location = new System.Drawing.Point(95, 139);
+            this.button3.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button3.Location = new System.Drawing.Point(24, 134);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(285, 23);
+            this.button3.Size = new System.Drawing.Size(435, 23);
             this.button3.TabIndex = 3;
             this.button3.Text = "Clique aqui para identificar a versão do Windows instalado";
             this.button3.UseVisualStyleBackColor = true;
@@ -92,9 +95,11 @@ namespace SupportTool
             // button4
             // 
             this.button4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button4.BackgroundImage")));
-            this.button4.Location = new System.Drawing.Point(95, 188);
+            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
+            this.button4.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button4.Location = new System.Drawing.Point(24, 183);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(285, 23);
+            this.button4.Size = new System.Drawing.Size(435, 23);
             this.button4.TabIndex = 4;
             this.button4.Text = "Clique para identificar seu usuário local";
             this.button4.UseVisualStyleBackColor = true;
@@ -103,13 +108,26 @@ namespace SupportTool
             // button5
             // 
             this.button5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button5.BackgroundImage")));
-            this.button5.Location = new System.Drawing.Point(95, 232);
+            this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
+            this.button5.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button5.Location = new System.Drawing.Point(24, 227);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(285, 23);
+            this.button5.Size = new System.Drawing.Size(435, 23);
             this.button5.TabIndex = 5;
             this.button5.Text = "Clique aqui para descobrir o nome de sua máquina local.";
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // button6
+            // 
+            this.button6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button6.BackgroundImage")));
+            this.button6.Location = new System.Drawing.Point(24, 269);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(435, 23);
+            this.button6.TabIndex = 6;
+            this.button6.Text = "Clique aqui para descobrir o ping da sua rede.";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // Form1
             // 
@@ -119,6 +137,7 @@ namespace SupportTool
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(491, 331);
+            this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
@@ -144,6 +163,7 @@ namespace SupportTool
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button6;
     }
 }
 
